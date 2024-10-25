@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nosifer&family=Noto+Sans+Cuneiform&family=Vampiro+One&display=swap');
-/*font-family: "Vampiro One", system-ui;
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nosifer&family=Noto+Music&family=Noto+Sans+Cuneiform&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Math&family=Noto+Sans+Runic&family=Noto+Znamenny+Musical+Notation&family=Vampiro+One&display=swap');
+/*
+font-family: "Vampiro One", system-ui;
 font-family: "Metal Mania", system-ui;
 font-family: "Nosifer", sans-serif;
 font-family: "Noto Sans Cuneiform", sans-serif;
+font-family: "Noto Sans Math", sans-serif;
+font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
+font-family: "Noto Music", sans-serif;
+font-family: "Noto Znamenny Musical Notation", sans-serif;
+font-family: "Noto Sans Runic", sans-serif;
 CSS HEX
 --cornsilk: #FBF3D5ff;
 --ochre: #CD782Bff;
@@ -25,7 +31,6 @@ CSS HSL
     text-align: center;
 }
 body{
-    background-image: linear-gradient(#FBF3D5ff,#CD782Bff);
     height: 100vh;
     font-family: "Nosifer", sans-serif;
 }
@@ -80,6 +85,44 @@ a{
     text-align: center;
     
 }
+.one{
+    padding: 10%;
+    font-size: 4.4em;
+    font-family: "Metal Mania", system-ui;
+    color:#ff9505;
+}
+.two h2, .two p{
+    font-family: "Metal Mania", system-ui;
+    margin-bottom: 1.8em;
+}
+.two{
+    padding: 10%;
+    font-size: 1.4em;
+}
+.four h2, .four p{
+    font-family: "Metal Mania", system-ui;
+    margin-bottom: 1.8em;
+}
+.four{
+    padding: 10%;
+    font-size: 1.4em;
+}
+.five h2, .five p{
+    font-family: "Metal Mania", system-ui;
+    margin-bottom: 1.8em;
+}
+.five{
+    padding: 10%;
+    font-size: 1.4em;
+}
+.seven h2, .seven p{
+    font-family: "Vampiro One", system-ui;
+    margin-bottom: 1.8em;
+}
+.seven{
+    padding: 10%;
+    font-size: 1.4em;
+}
 /*css grid*/
 .container{
     display: grid;
@@ -103,9 +146,12 @@ img{
     
 }
 .three{
-    min-height: 250px;
-    background-color: #ff9505;
-    
+    min-height: 450px;
+    background-image: url(../img/2151827499.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
 }
 .four{
     min-height: 250px;
@@ -114,12 +160,16 @@ img{
 }
 .five{
     min-height: 250px;
-    background-color: #3B5264;
+    background-image: url(../);
     
 }
 .six{
-    min-height: 250px;
-    background-color: #3B5264;
+    min-height: 450px;
+    background-image: url(../img/2151827618.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
     
 }
 .seven{
@@ -172,9 +222,40 @@ img{
     }
 }/**/
 /*comp*/
-@media screen and (min-width:1850px){
+@media screen and (min-width:1025px){
     .header{
         flex-direction: row;justify-content: space-between;
+    }
+    #hero{
+        min-height: 800px;
+    }
+    .hero h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .one{
+        grid-column: 1/4;
+    }
+    .two{
+        grid-column: 1/3;
+    }
+    .three{
+        grid-column: 3/4;
+    }
+    .four{
+        grid-column: 1/4;
+    }
+    .five{
+        grid-column: 1/4;
+    }
+    .six{
+        grid-column: 1/2;
+    }
+    .seven{
+        grid-column: 2/4;
     }
 }
 /**/
@@ -185,3 +266,10 @@ img{
     }
 }
 /**/
+footer{
+    margin-top: 0;
+    padding: 10%;
+    background: #ff9505;
+    color:#3B5264;
+    min-height: 300px;
+}
