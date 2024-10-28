@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nosifer&family=Noto+Music&family=Noto+Sans+Cuneiform&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Math&family=Noto+Sans+Runic&family=Noto+Znamenny+Musical+Notation&family=Vampiro+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nosifer&family=Noto+Color+Emoji&family=Noto+Emoji:wght@300..700&family=Noto+Music&family=Noto+Sans+Cuneiform&family=Noto+Sans+Duployan:wght@400;700&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Sans+Linear+A&family=Noto+Sans+Linear+B&family=Noto+Sans+Math&family=Noto+Sans+Ogham&family=Noto+Sans+Runic&family=Noto+Sans+SignWriting&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@100..900&family=Noto+Znamenny+Musical+Notation&family=Vampiro+One&display=swap');
 /*
 font-family: "Vampiro One", system-ui;
 font-family: "Metal Mania", system-ui;
@@ -9,6 +9,15 @@ font-family: "Noto Sans Egyptian Hieroglyphs", sans-serif;
 font-family: "Noto Music", sans-serif;
 font-family: "Noto Znamenny Musical Notation", sans-serif;
 font-family: "Noto Sans Runic", sans-serif;
+font-family: "Noto Emoji", serif;
+font-family: "Noto Color Emoji", serif;
+font-family: "Noto Sans Linear B", serif;
+font-family: "Noto Sans Linear A", serif;
+font-family: "Noto Sans Ogham", serif;
+font-family: "Noto Sans Duployan", serif;
+font-family: "Noto Sans SignWriting", serif;
+font-family: "Noto Sans Symbols 2", serif;
+font-family: "Noto Sans Symbols", serif;
 CSS HEX
 --cornsilk: #FBF3D5ff;
 --ochre: #CD782Bff;
@@ -99,9 +108,17 @@ a{
     padding: 10%;
     font-size: 1.4em;
 }
+.two img{
+    width: 20%;
+    float: left;
+}
 .four h2, .four p{
     font-family: "Metal Mania", system-ui;
     margin-bottom: 1.8em;
+}
+.four img{
+    width: 20%;
+    float: right;
 }
 .four{
     padding: 10%;
@@ -115,6 +132,10 @@ a{
     padding: 10%;
     font-size: 1.4em;
 }
+.five img{
+    width: 20%;
+    float: right;
+}
 .seven h2, .seven p{
     font-family: "Vampiro One", system-ui;
     margin-bottom: 1.8em;
@@ -122,6 +143,45 @@ a{
 .seven{
     padding: 10%;
     font-size: 1.4em;
+}
+.seven img{
+    width: 20%;
+    float: left;
+}
+.seven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wavy {
+    position: relative;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #0B0D0Aff;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
 }
 /*css grid*/
 .container{
