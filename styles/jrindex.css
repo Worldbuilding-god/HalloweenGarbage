@@ -146,7 +146,6 @@ a{
 }
 .seven img{
     width: 20%;
-    float: left;
 }
 .seven{
     display: flex;
