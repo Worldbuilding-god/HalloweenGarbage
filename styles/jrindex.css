@@ -45,6 +45,10 @@ body{
 }
 ul{
     list-style: none;
+    font-family: "Metal Mania", system-ui;
+}
+.two li{
+    margin: 20px 0px 20px 0px;
 }
 a{
     color: #3B5264ff;text-decoration: none;
